@@ -1,16 +1,6 @@
 \# Day 03 – Linux Commands Practice
 
-
-
-\## Overview
-
-This task focuses on strengthening Linux command-line fundamentals required for
-
-real-world DevOps troubleshooting and system administration.
-
-
-
-For Day 03, I practiced commonly used Linux commands related to:
+I practiced commonly used Linux commands related to:
 
 \- File system management
 
@@ -19,51 +9,15 @@ For Day 03, I practiced commonly used Linux commands related to:
 \- Networking and basic troubleshooting
 
 
-
 ---
 
+## 📸 Handwritten Linux Commands Cheat Sheet
 
+### File System & Process Management
+![File System and Process Commands](images/linux-filesystem-process-commands.jpg)
 
-\## 📌 Learning Outcome
-
-\- Improved confidence in using Linux commands
-
-\- Better understanding of system inspection and debugging
-
-\- Familiarity with commands frequently used in production environments
-
-
-
----
-
-
-
-\## 📝 Handwritten Notes
-
-All Linux commands for this task were practiced and documented using
-
-handwritten notes.
-
-
-
-The handwritten cheat sheet includes:
-
-\- File system commands
-
-\- Process monitoring and control commands
-
-\- Networking and connectivity commands
-
-
-
-
-
-\- `images/` – Handwritten Linux commands cheat sheet 
-
-
-
----
-
+### Networking Commands
+![Networking Commands](images/linux-networking-commands.jpg)
 
 
 \## ✅ Status
