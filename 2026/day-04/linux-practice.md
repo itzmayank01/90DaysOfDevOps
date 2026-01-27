@@ -89,6 +89,6 @@ Day 04 – Linux Practice: Processes and Services
 \- Shows the last 50 lines of system logs.
 
 \- Helps check recent system activity and spot errors.
-
+    
 
 
