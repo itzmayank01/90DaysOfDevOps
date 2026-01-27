@@ -1,24 +1,11 @@
 Day 04 – Linux Practice: Processes and Services
 
 
+## Notes – Page 1
+![Day 04 Linux Practice Notes Page 1](images/day04-linux-practice-1.jpg)
 
-
-
-
----
-
-
-
-Notes – Page 1
-
-!\[Day 04 Linux Practice Notes Page 1](images/day04-linux-practice-1.jpg)
-
-
-
-\### Notes – Page 2
-
-!\[Day 04 Linux Practice Notes Page 2](images/day04-linux-practice-2.jpg)
-
+## Notes – Page 2
+![Day 04 Linux Practice Notes Page 2](images/day04-linux-practice-2.jpg)
 
 
 \## Process Checks
