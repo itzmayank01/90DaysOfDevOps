@@ -2,15 +2,6 @@ Day 04 – Linux Practice: Processes and Services
 
 
 
-Today’s task focuses on practicing Linux fundamentals using real commands.
-
-The goal was to understand how to inspect running processes, systemd services,
-
-and system logs, and to follow a basic troubleshooting flow.
-
-
-
-This practice was performed on an Ubuntu Linux environment.
 
 
 
