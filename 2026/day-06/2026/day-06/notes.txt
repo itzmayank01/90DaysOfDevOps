@@ -1,0 +1,8 @@
+Learning Linux file operations
+Using redirection operators
+tee writes and displays output
+cat reads full file
+head shows first lines
+tail shows last lines
+Linux files are used for logs
+DevOps relies heavily on text files
