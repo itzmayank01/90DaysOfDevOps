@@ -18,10 +18,4 @@ I have created handwritten notes for better understanding and long-term retentio
 
 ## 🔹 Part 1: Linux File System Hierarchy
 
-### `/` (Root Directory)
-**Purpose:**  
-This is the starting point of the Linux file system. All files and directories exist under `/`.
-
-**Command used:**
-```bash
-ls -l /
+## 🔹 Part 2: Scenerio Questions
