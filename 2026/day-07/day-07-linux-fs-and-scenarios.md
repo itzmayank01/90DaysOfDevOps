@@ -12,19 +12,20 @@ I have created handwritten notes for better understanding and long-term retentio
 ## 📓 Handwritten Notes
 
 ### Linux File System Hierarchy – Page 1
-![Day 07 Notes Page 1](./day07-1.jpg)
+![Day 07 Notes Page 1](./notes/day07-1.jpg)
 
 ### Linux File System Hierarchy – Page 2
-![Day 07 Notes Page 2](./day07-2.jpg)
+![Day 07 Notes Page 2](./notes/day07-2.jpg)
 
 ### Scenario-Based Practice – Page 3
-![Day 07 Notes Page 3](./day07-3.jpg)
+![Day 07 Notes Page 3](./notes/day07-3.jpg)
 
 ---
 
 ## 🔹 Part 1: Linux File System Hierarchy
 
 ## 🔹 Part 2: Scenerio Questions
+
 
 
 
