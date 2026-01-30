@@ -9,7 +9,6 @@ This day focuses on **logs, configs, permissions, and services**, which are crit
 ## 📓 Handwritten Notes
 I have created handwritten notes for better understanding and long-term retention.
 
-## 📓 Handwritten Notes
 
 ### Linux File System Hierarchy – Page 1
 ![Day 07 Notes Page 1](./notes/day07-1.jpg)
@@ -25,6 +24,7 @@ I have created handwritten notes for better understanding and long-term retentio
 ## 🔹 Part 1: Linux File System Hierarchy
 
 ## 🔹 Part 2: Scenerio Questions
+
 
 
 
