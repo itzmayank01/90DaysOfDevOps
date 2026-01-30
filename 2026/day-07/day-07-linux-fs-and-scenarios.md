@@ -20,12 +20,12 @@ I have created handwritten notes for better understanding and long-term retentio
 ### Scenario-Based Practice – Page 3
 ![Day 07 Notes Page 3](./day07-3.jpg)
 
-
 ---
 
 ## 🔹 Part 1: Linux File System Hierarchy
 
 ## 🔹 Part 2: Scenerio Questions
+
 
 
 
