@@ -1,0 +1,3 @@
+106.219.144.26 - - [31/Jan/2026:17:55:03 +0000] "GET / HTTP/1.1" 200 409 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+106.219.144.26 - - [31/Jan/2026:17:55:04 +0000] "GET /favicon.ico HTTP/1.1" 404 196 "http://3.108.193.171/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+2026/01/31 17:52:30 [notice] 8467#8467: using inherited sockets from "5;6;"
