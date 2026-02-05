@@ -1,22 +1,28 @@
-# Day 10 Challenge – File Permissions & File Operations
+# Day 10 Challenge
 
 ## Files Created
-- devops.txt
-- notes.txt
-- script.sh
-- project/
+devops.txt
+notes.txt
+script.sh
+project/
 
 ## Permission Changes
-- script.sh: made executable using chmod +x
-- devops.txt: set to read-only
-- notes.txt: permission set to 640
-- project/: permission set to 755
+script.sh → executable (755)
+devops.txt → read-only (444)
+notes.txt → 640
+project → 755
 
 ## Commands Used
-touch, echo, vim, cat, head, tail, chmod, mkdir, ls -l
+touch
+echo
+vim
+cat
+head
+tail
+chmod
+ls -l
 
 ## What I Learned
-1. Linux permissions control access using read, write, execute.
-2. Execute permission is mandatory to run scripts.
-3. Permission errors help protect system files.
-
+1. Linux permissions use rwx
+2. chmod changes file access
+3. Execute permission is required to run scripts
