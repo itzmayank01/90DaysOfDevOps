@@ -116,9 +116,6 @@ chmod +x *.sh
 │── file_check.sh
 │── server_check.sh
 │── README.md
-🔥 Hashtags (for LinkedIn)
 
-#90DaysOfDevOps #ShellScripting #Linux #DevOpsJourney #Bash
 
-✅ Day 16 Completed
 
