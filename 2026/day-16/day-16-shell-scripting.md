@@ -10,6 +10,16 @@ Today I learned the fundamentals of Bash scripting including:
 
 ## Hands on -
 
+<img width="932" height="948" alt="image" src="https://github.com/user-attachments/assets/c9f663fa-039b-474e-ba5d-10f71ed07615" />
+
+<img width="932" height="948" alt="image" src="https://github.com/user-attachments/assets/37d335bd-a6a3-413b-b640-491a7915f8ae" />
+
+<img width="908" height="828" alt="image" src="https://github.com/user-attachments/assets/7bef998d-1aa9-4c7a-97a6-0c6b07d04154" />
+
+<img width="1122" height="578" alt="image" src="https://github.com/user-attachments/assets/5e143fe2-de13-41c9-bddb-a16e01cddb7e" />
+
+<img width="1917" height="971" alt="image" src="https://github.com/user-attachments/assets/9eaeda96-f6fc-4e68-89c2-706cf7b26815" />
+
 ---
 
 ## 📂 Scripts Created
@@ -111,3 +121,4 @@ chmod +x *.sh
 #90DaysOfDevOps #ShellScripting #Linux #DevOpsJourney #Bash
 
 ✅ Day 16 Completed
+
