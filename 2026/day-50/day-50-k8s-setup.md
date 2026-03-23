@@ -56,4 +56,4 @@ The container runtime is responsible for running containers. Examples include **
 
 ---
 
-# 3. Kubernetes Architecture Diagram
+
