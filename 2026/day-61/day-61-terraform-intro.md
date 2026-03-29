@@ -1,6 +1,6 @@
 # Day 61 — Introduction to Terraform and Your First AWS Infrastructure
 
-## Overview
+## Overview 
 
 Today marked the beginning of my Infrastructure as Code journey with **Terraform**. Instead of clicking around in the AWS console, I defined, provisioned, and destroyed real AWS resources — an S3 bucket and an EC2 instance — using nothing but `.tf` files and a terminal.
 
