@@ -1,0 +1,23 @@
+---
+
+- name: install and start Nginx on web servers
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Start and enable Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: true
+
+    - name: Create custom index page
+      copy:
+        content: "<h1>DEPLOYED BY ANSIBLE MAYANK <h1>"
+        dest: /var/www/html/index.html

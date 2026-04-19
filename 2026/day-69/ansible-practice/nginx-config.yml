@@ -1,0 +1,36 @@
+---
+- name: Configure Nginx with handler
+  hosts: web
+  become: true
+
+  tasks:
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Deploy Nginx config
+      copy:
+        src: files/nginx.conf
+        dest: /etc/nginx/nginx.conf
+        owner: root
+        mode: '0644'
+      notify: Restart Nginx
+
+    - name: Deploy custom index page
+      copy:
+        content: "<h1>Managed by Ansible</h1><p>Server: {{ inventory_hostname }}</p>"
+        dest: /var/www/html/index.html
+
+    - name: Ensure Nginx is running
+      service:
+        name: nginx
+        state: started
+        enabled: true
+
+  handlers:
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted
