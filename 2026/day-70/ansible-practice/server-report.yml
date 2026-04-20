@@ -1,0 +1,37 @@
+---
+- name: Generate server report
+  hosts: all
+  become: false
+
+  tasks:
+
+    - name: Collect system information
+      debug:
+        msg: |
+          ===== SERVER REPORT =====
+          Hostname: {{ ansible_hostname }}
+          OS: {{ ansible_distribution }} {{ ansible_distribution_version }}
+          IP Address: {{ ansible_default_ipv4.address }}
+          RAM: {{ ansible_memtotal_mb }} MB
+          CPU Cores: {{ ansible_processor_vcpus }}
+          =========================
+
+    - name: Check disk usage
+      command: df -h /
+      register: disk_output
+
+    - name: Show disk usage
+      debug:
+        var: disk_output.stdout_lines
+
+    - name: Check running processes count
+      shell: ps aux | wc -l
+      register: process_count
+
+    - name: Show process count
+      debug:
+        msg: "Total running processes: {{ process_count.stdout }}"
+
+    - name: Show network interfaces
+      debug:
+        var: ansible_interfaces

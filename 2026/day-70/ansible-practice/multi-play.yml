@@ -1,0 +1,53 @@
+---
+
+- name: configure web servers
+  hosts: web
+  become: true
+  
+  tasks: 
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+        update_cache: yes
+
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+        enabled: true
+
+- name: configure app servers
+  hosts: app
+  become: true
+
+  tasks:
+    - name: Install dependencies
+      apt:
+        name:
+          - gcc
+          - make
+
+    - name: Create app directory
+      file: 
+        path: /opt/myapp
+        state: directory
+        mode: '0755'
+        
+- name: Data base servers
+  hosts: db 
+  become: true
+
+  tasks: 
+    - name: Install my sql  client
+      apt:
+       name: mysql-client
+       state: present
+
+    - name: create a directory
+      file: 
+        path: /opt/db
+        state: directory
+        owner: ubuntu
+        mode: '0755' 
+    
