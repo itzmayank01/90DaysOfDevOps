@@ -1,0 +1,7 @@
+#SPDX-License-Identifier: MIT-0
+# handlers file for roles/nginx
+---
+- name: restart nginx
+  service:
+    name: nginx
+    state: restarted

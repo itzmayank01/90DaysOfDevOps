@@ -1,0 +1,79 @@
+
+# tasks file for roles/docker
+---
+- name: Install Docker dependencies
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - software-properties-common
+      - python3-pip
+    state: present
+    update_cache: yes
+  tags: docker
+
+- name: Add Docker GPG key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+  tags: docker
+
+- name: Add Docker repository
+  apt_repository:
+    repo: deb https://download.docker.com/linux/ubuntu jammy stable
+    state: present
+  tags: docker
+
+- name: Install Docker CE
+  apt:
+    name: docker-ce
+    state: present
+    update_cache: yes
+  tags: docker
+
+- name: Start and enable Docker
+  service:
+    name: docker
+    state: started
+    enabled: true
+  tags: docker
+
+- name: Add deploy user to docker group
+  user:
+    name: deploy
+    groups: docker
+    append: yes
+  tags: docker
+
+- name: Install Docker Compose
+  pip:
+    name: docker-compose
+  tags: docker
+
+- name: Pull application image
+  community.docker.docker_image:
+    name: "{{ docker_app_image }}"
+    tag: "{{ docker_app_tag }}"
+    source: pull
+  tags: docker
+
+- name: Run application container
+  community.docker.docker_container:
+    name: "{{ docker_app_name }}"
+    image: "{{ docker_app_image }}:{{ docker_app_tag }}"
+    state: started
+    restart_policy: always
+    ports:
+      - "{{ docker_app_port }}:{{ docker_container_port }}"
+  tags: docker
+
+- name: Wait for container to be healthy
+  uri:
+    url: "http://localhost:{{ docker_app_port }}"
+    status_code: 200
+  retries: 5
+  delay: 3
+  register: health_check
+  until: health_check.status == 200
+  tags: docker

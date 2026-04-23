@@ -1,0 +1,18 @@
+---
+- name: Apply common configuration
+  hosts: all
+  become: true
+  roles:
+    - common
+
+- name: Setup Docker
+  hosts: app
+  become: true
+  roles:
+    - docker
+
+- name: Setup Nginx
+  hosts: app
+  become: true
+  roles:
+    - nginx
