@@ -1,0 +1,21 @@
+services:
+  loki:
+    image: grafana/loki:latest
+    container_name: loki
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki/loki-config.yml:/etc/loki/loki-config.yml
+      - loki_data:/loki
+    command: [ "-config.file=/etc/loki/loki-config.yml" ]
+    restart: unless-stopped
+  promtail:
+    image: grafana/promtail:latest
+    container_name: promtail
+    volumes:
+      - ./promtail/promtail-config.yml:/etc/promtail/promtail-config.yml
+      - /tmp:/tmp #
+    command: [ "-config.file=/etc/promtail/promtail-config.yml" ]
+    restart: unless-stopped
+volumes:
+  loki_data:
