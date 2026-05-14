@@ -4,7 +4,7 @@ A day-by-day index of the complete 90-day DevOps challenge. Click any day to jum
 
 ---
 
-## Linux Fundamentals (Days 1-13)
+## Linux Fundamentals (Days 1-13)   
 
 | Day | Topic |
 |-----|-------|
